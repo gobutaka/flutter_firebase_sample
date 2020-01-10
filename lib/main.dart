@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() => runApp(MyApp());
 
@@ -26,8 +27,27 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-
   void _incrementCounter() {
+    Firestore.instance
+        .collection('pokemons')
+        .snapshots()
+        .listen((data) => data.documents.forEach((doc) => print(doc['name'])));
+    // ================================
+    Firestore.instance
+        .collection('pokemons')
+        .getDocuments()
+        .then((data) => data.documents.forEach((doc) => print(doc['name'])));
+    // ================================
+    Firestore.instance
+        .collection('pokemons')
+        .document('t5dXxD9rl2jfcHBTeLrI')
+        .get()
+        .then((document) => print(document['name']));
+    // ================================
+    // それぞれの型を確認
+    print(Firestore.instance.collection('pokemons').snapshots());
+    print(Firestore.instance.collection('pokemons').getDocuments());
+
     setState(() {
       _counter++;
     });

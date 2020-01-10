@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>989762174370-218f7beo642k1ovk7lnipv8o2ufjkeov.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.989762174370-218f7beo642k1ovk7lnipv8o2ufjkeov</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBIBnYbfvG4pzJQ8ab1XUF04MKW0hltp2M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>989762174370</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.flutterFirebaseSample</string>
+	<key>PROJECT_ID</key>
+	<string>pokemon-ev-list</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pokemon-ev-list.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:989762174370:ios:f99c761da307b74f7a86fb</string>
+	<key>DATABASE_URL</key>
+	<string>https://pokemon-ev-list.firebaseio.com</string>
+</dict>
+</plist>
