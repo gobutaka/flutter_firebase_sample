@@ -10,10 +10,10 @@ class Pokemon with ChangeNotifier {
     Firestore.instance.collection('pokemons').getDocuments();
   }
 
-  void find() async {
+  void find(String documentId) async {
     await Firestore.instance
         .collection('pokemons')
-        .document('t5dXxD9rl2jfcHBTeLrI')
+        .document(documentId)
         .get()
         .then((document) => _name = document['name']);
     notifyListeners();

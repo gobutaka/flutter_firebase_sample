@@ -74,7 +74,7 @@ class IncrementButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final pokemon = Provider.of<Pokemon>(context, listen: false);
     return FloatingActionButton(
-      onPressed: () => pokemon.find(),
+      onPressed: () => pokemon.find('t5dXxD9rl2jfcHBTeLrI'),
       tooltip: 'Find',
       child: Icon(Icons.add),
     );
